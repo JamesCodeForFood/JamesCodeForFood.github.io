@@ -60,6 +60,7 @@ header
         padding: 0 15px
         outline: 0
         border-left: 1px solid grey
+        background: #fff
     &__btn-full
         background: url("../img/header-form__btn-full.png") no-repeat
         width: 60px
@@ -942,8 +943,7 @@ header
     display: none
 
 .daily-deals__carousel .carousel-inner .active,
-.daily-deals__carousel .carousel-inner .active + .carousel-item,
-.daily-deals__carousel .carousel-inner .active + .carousel-item + .carousel-item
+.daily-deals__carousel .carousel-inner .active + .carousel-item
     display: block
 
 .daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
@@ -1010,7 +1010,11 @@ header
     margin-top: 30px
 
 .nav-top-small
-    margin-top: -10px }
+    margin-top: -10px
+    
+.nav-top-small .dropdown-menu.show
+    padding: 0 5px
+    font-size: 11px }
 
 @media (min-width: 320px) and (max-width: 575px) {
 
@@ -1024,7 +1028,8 @@ header
 .nav-top,
 .header-menu,
 .carousel-top__position,
-.trending-coll__coll-3
+.trending-coll__coll-3,
+.daily-deals__discount
     display: none
     
 .featured-collections
@@ -1055,7 +1060,7 @@ header
     margin-top: 30px
     font-size: 9pt
     left: initial
-    margin-left: -197px
+    margin-left: -195px
     float: left
     
 .trending-coll__header p:nth-child(1)
