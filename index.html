@@ -29,15 +29,11 @@
             </div>
             <div class="col-12 d-sm-none d-block">
                     <div class="header-menu-small">
-                        <button type="button" class="btn btn-white header-menu-small__btn pull-left" data-toggle="collapse" href="#header-menu-small__search" role="button" aria-expanded="false" aria-controls="header-form-small__search">&#9776;</button>
-                        <div class="row">
-                            <div class="col">
-                                <div class="collapse multi-collapse pull-left" id="header-menu-small__search">
-                                    <div class="card card-body">My account</div>
-                                    <div class="card card-body">My cart</div>
-                                    <div class="card card-body">Wishlist</div>
-                                </div>
-                            </div>
+                        <button type="button" class="btn btn-white header-menu-small__btn" data-toggle="dropdown" id="header-menu-small__search" role="button" aria-expanded="false" ariar-haspoput="true">&#9776;</button>
+                        <div class="dropdown-menu" aria-labelledby="header-menu-small__search">
+                            <a class="dropdown-item" href="#">My account</a>
+                            <a class="dropdown-item" href="#">My cart</a>
+                            <a class="dropdown-item" href="#">Wishlist</a>
                         </div>
                     </div>
             </div>
@@ -336,7 +332,7 @@
                     <p><a href="#">See more</a></p>
                 </div>
                 <div class="carousel col daily-deals__carousel">
-                    <div id="daily-deals__carousel" class="carousel slide" data-ride="carousel">
+                    <div id="daily-deals__carousel" class="carousel slide multi-item-carousel" data-ride="carousel">
                         <ol class="carousel-indicators daily-deals__carousel-indicators">
                             <li data-target="#daily-deals__carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#daily-deals__carousel" data-slide-to="1"></li>
@@ -345,7 +341,7 @@
                             <li data-target="#daily-deals__carousel" data-slide-to="0"></li>
                         </ol>
                         <div class="carousel-inner daily-deals__carousel-inner row mx-auto" role="listbox">
-                            <div class="carousel-item active col-4 col-md-3 daily-deals__carousel-img-1">
+                            <div class="carousel-item active col-6 col-sm-4 col-md-3 daily-deals__carousel-img-1">
                                 <div class="daily-deals__discount">27% off</div>
                                 <div class="carousel-caption">
                                     <ul>
@@ -354,7 +350,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="carousel-item col-4 col-md-3 daily-deals__carousel-img-2">
+                            <div class="carousel-item col-6 col-sm-4 col-md-3 daily-deals__carousel-img-2">
                                 <div class="daily-deals__discount">27% off</div>
                                 <div class="carousel-caption">
                                     <ul>
@@ -363,7 +359,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="carousel-item col-4 col-md-3 daily-deals__carousel-img-3">
+                            <div class="carousel-item col-6 col-sm-4 col-md-3 daily-deals__carousel-img-3">
                                 <div class="daily-deals__discount">27% off</div>
                                 <div class="carousel-caption">
                                     <ul>
@@ -372,7 +368,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="carousel-item col-4 col-md-3 daily-deals__carousel-img-4">
+                            <div class="carousel-item col-6 col-sm-4 col-md-3 daily-deals__carousel-img-4">
                                 <div class="daily-deals__discount">27% off</div>
                                 <div class="carousel-caption">
                                     <ul>
@@ -381,7 +377,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="carousel-item col-4 col-md-3 daily-deals__carousel-img-5">
+                            <div class="carousel-item col-6 col-sm-4 col-md-3 daily-deals__carousel-img-5">
                                 <div class="daily-deals__discount">27% off</div>
                                 <div class="carousel-caption">
                                     <ul>

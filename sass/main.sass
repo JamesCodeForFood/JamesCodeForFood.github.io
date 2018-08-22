@@ -64,7 +64,7 @@ header
     &__btn-full
         background: url("../img/header-form__btn-full.png") no-repeat
         width: 60px
-        height: 38px
+        height: 39px
         margin-left: -5px
         border-radius: 0 5px 5px 0
         position: relative
@@ -110,8 +110,7 @@ header
     margin-top: -88px
     margin-right: 3px
     background-color: #000000 !important
-    color: #000000 !important
-    
+    color: #000000 !important   
 
 .header-menu li
     display: inline-block
@@ -131,7 +130,14 @@ header
     width: 50px !important
 
 .header-menu__account .dropdown-menu.show
-    left: -115px !important
+    left: -90px !important
+    padding-left: 10px
+
+.header-menu__account .dropdown-menu.show a
+    font-size: 14px
+
+.header-menu-small .dropdown-menu.show a
+    padding: 5px 10px
 
 .header__header
     max-width: 1170px
@@ -159,6 +165,9 @@ header
 .sidebar-cat__category
     background: #fff
     font-size: 12px
+
+.sidebar-cat__category .dropdown-menu a
+    padding-left: 10px
 
 .sidebar-cat__all-cats
 
@@ -413,14 +422,17 @@ header
 
 .weight-off__preview-img1
     background: url("../img/weight-off__preview-img-1.png") center center no-repeat
+    background-size: 73%
 
 .weight-off__preview-img2
     background: url("../img/weight-off__preview-img-2.png") center center no-repeat
     border-left: 0
+    background-size: 73%
 
 .weight-off__preview-img3
     background: url("../img/weight-off__preview-img-3.png") center center no-repeat
     border-left: 0
+    background-size: 73%
 
 .watches__main-img
     background: url("../img/watches__main-img.png") no-repeat
@@ -430,14 +442,17 @@ header
 
 .watches__preview-img1
     background: url("../img/watches__preview-img-1.png") center center no-repeat
+    background-size: 59%
 
 .watches__preview-img2
     background: url("../img/watches__preview-img-2.png") center center no-repeat
     border-left: 0
+    background-size: 73%
 
 .watches__preview-img3
     background: url("../img/watches__preview-img-3.png") center center no-repeat
     border-left: 0
+    background-size: 73%
 
 .smartphones__main-img
     background: url("../img/smartphones__main-img.png") no-repeat
@@ -447,14 +462,17 @@ header
 
 .smartphones__preview-img1
     background: url("../img/smartphones__preview-img-1.png") center center no-repeat
+    background-size: 73%
 
 .smartphones__preview-img2
     background: url("../img/smartphones__preview-img-2.png") center center no-repeat
     border-left: 0
+    background-size: 43%
 
 .smartphones__preview-img3
     background: url("../img/smartphones__preview-img-3.png") center center no-repeat
     border-left: 0
+    background-size: 73%
 
 
 .featured-collections__flex-first ul,
@@ -510,8 +528,6 @@ header
     font-size: 12pt
     text-decoration: underline
 
-.daily-deals__carousel
-
 .daily-deals__carousel-inner ul
     color: black
     text-align: center
@@ -548,7 +564,6 @@ header
     margin-top: 30px
 
 .daily-deals__carousel-inner .carousel-item
-    width: 25%
     border: 1px solid #dde2e6
     border-spacing: 0
     border-collapse: collapse
@@ -583,62 +598,7 @@ header
     left: initial
     right: 84px
 
-.daily-deals__carousel .carousel-inner .active,
-.daily-deals__carousel .carousel-inner .active + .carousel-item,
-.daily-deals__carousel .carousel-inner .active + .carousel-item + .carousel-item,
-.daily-deals__carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item
-    display: block
 
-.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
-.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
-.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-    transition: none
-
-.daily-deals__carousel .carousel-inner .carousel-item-next,
-.daily-deals__carousel .carousel-inner .carousel-item-prev
-    position: relative
-    transform: translate3d(0, 0, 0)
-
-.daily-deals__carouse .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-    position: absolute
-    top: 0
-    right: -25%
-    z-index: -1
-    display: block
-    visibility: visible
-
-.daily-deals__carouse .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-    position: relative
-    transform: translate3d(-100%, 0, 0)
-    visibility: visible
-
-.daily-deals__carouse .carousel-inner .carousel-item-prev.carousel-item-right
-    position: absolute
-    top: 0
-    left: 0
-    z-index: -1
-    display: block
-    visibility: visible
-
-.daily-deals__carouse .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
-    position: relative
-    transform: translate3d(100%, 0, 0)
-    visibility: visible
-    display: block
-    visibility: visible
-    
 
 .daily-deals__carousel-img-1
     background: url(../img/daily-deals__carousel-img-1.png) no-repeat
@@ -674,6 +634,62 @@ header
     background-size: 80% 
     width: 100%
     padding-bottom: 25%
+
+.daily-deals__carousel .carousel-inner .active,
+.daily-deals__carousel .carousel-inner .active + .carousel-item,
+.daily-deals__carousel .carousel-inner .active + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item
+    display: block
+
+.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item + .carousel-item
+    transition: none
+
+.daily-deals__carousel .carousel-inner .carousel-item-next,
+.daily-deals__carousel .carousel-inner .carousel-item-prev
+    position: relative
+    transform: translate3d(0, 0, 0)
+
+.daily-deals__carouse .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
+    position: absolute
+    top: 0
+    right: -25%
+    z-index: -1
+    display: block
+    visibility: visible
+
+.daily-deals__carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
+    position: relative
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+
+.daily-deals__carouse .carousel-inner .carousel-item-prev.carousel-item-right
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    display: block
+    visibility: visible
+
+.daily-deals__carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item
+    position: relative
+    transform: translate3d(100%, 0, 0)
+    visibility: visible
+    display: block
+    visibility: visible
 
 .carousel-caption
     bottom: 0
@@ -964,15 +980,15 @@ header
     display: block
     visibility: visible
 
-.daily-deals__carouse .active.carousel-item-left + .carousel-item-next.carousel-item-left,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item
+.daily-deals__carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item
     position: relative
     transform: translate3d(-100%, 0, 0)
     visibility: visible
 
-.daily-deals__carouse .carousel-inner .carousel-item-prev.carousel-item-right
+.daily-deals__carousel .carousel-inner .carousel-item-prev.carousel-item-right
     position: absolute
     top: 0
     left: 0
@@ -980,10 +996,10 @@ header
     display: block
     visibility: visible
 
-.daily-deals__carouse .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
-.daily-deals__carouse .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item
+.daily-deals__carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.daily-deals__carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item
     position: relative
     transform: translate3d(100%, 0, 0)
     visibility: visible
@@ -1014,7 +1030,14 @@ header
     
 .nav-top-small .dropdown-menu.show
     padding: 0 5px
-    font-size: 11px }
+    font-size: 11px
+    
+.nav-top-small .dropdown-menu.show li
+    margin-bottom: 5px
+    margin-top: 5px
+    
+.daily-deals__carousel-inner .carousel-item
+    padding-bottom: 24% }
 
 @media (min-width: 320px) and (max-width: 575px) {
 
@@ -1079,8 +1102,24 @@ header
     
 .carousel-indicators,
 .daily-deals__carousel .carousel-control-prev,
-.daily-deals__carousel .carousel-control-next
+.daily-deals__carousel .carousel-control-next,
+.daily-deals__carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item
     display: none
     
 #daily-deals__carousel
-    margin-bottom: 0 }
+    margin-bottom: 0
+    
+.daily-deals__carousel .carousel-inner .active.carousel-item + .carousel-item
+    position: absolute
+    top: 0
+    right: -50%
+    z-index: -1
+    display: block
+    visibility: visible
+    
+.daily-deals__carousel-inner .carousel-item
+    padding-bottom: 48%
+    
+.daily-deals__carousel-inner ul, 
+.daily-deals__carousel-inner li:nth-child(2)
+    font-size: 2vw }
