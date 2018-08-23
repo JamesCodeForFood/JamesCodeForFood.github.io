@@ -81,7 +81,7 @@ header {
 .header-form__btn-full {
   background: url("../img/header-form__btn-full.png") no-repeat;
   width: 60px;
-  height: 39px;
+  height: 38px;
   margin-left: -5px;
   border-radius: 0 5px 5px 0;
   position: relative;
@@ -1192,12 +1192,17 @@ header {
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .header-form__btn-full {
+    top: 0px;
+  }
   .header-form__input-wrap {
     width: calc(100% - 200px);
   }
   .header-form__select {
     max-width: 149px;
     padding: 0 10px;
+    position: relative;
+    bottom: 1px;
   }
   .nav-top,
   .header-menu,
