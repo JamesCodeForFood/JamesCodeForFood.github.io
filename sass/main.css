@@ -1192,17 +1192,12 @@ header {
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .header-form__btn-full {
-    top: 0px;
-  }
   .header-form__input-wrap {
     width: calc(100% - 200px);
   }
   .header-form__select {
     max-width: 149px;
     padding: 0 10px;
-    position: relative;
-    bottom: 1px;
   }
   .nav-top,
   .header-menu,
